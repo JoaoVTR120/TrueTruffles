@@ -5,56 +5,53 @@
     text-decoration: none;
 }
 
-
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: visible;
     background-color: #ffcc5e;
 }
 
-nav
-{
+nav {
     background-color: #28003d;
     height: 110px;
     width: 100%;
 }
 
-label.Logot{
-    color: white;
+.Logot {
+    color: rgb(255, 255, 255);
     font-size: 35px;
     line-height: 100px;
     padding: 0px 0px;
     font-weight: bold;
-}
+    }
+
 
 .Logot img {
-    width: 80px; 
-    height: auto; 
-    float: left;
-    margin: 10px 20px 10px 50px; 
-    margin-left: 20px;
+        width: 80px; 
+        height: auto; 
+        float: left;
+        margin: 10px 20px 10px 50px; 
+        margin-left: 20px;
 }
 
-nav ul
-{
+nav ul {
     float: right;
     margin-right: 20px;
     font-size: large;
 }
 
-nav ul li
-{
+nav ul li {
     display: inline-block;
     line-height: 110px;
     margin: 0px 15px;
     transition-duration: 0.5s;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     transform: scale(1.2);
 }
 
-nav ul li a
-{
+nav ul li a {
     color: white;
     font-size: 20px;
     padding: 7px 13px;
@@ -62,13 +59,12 @@ nav ul li a
     transition-duration: 0.5s;
 }
 
-nav ul li a:hover{
-    background:#ffffff;
+nav ul li a:hover {
+    background: #ffffff;
     color: #000000;
 }
 
-.checkbtn
-{
+.checkbtn {
     font-size: 30px;
     color: white;
     float: right;
@@ -78,21 +74,19 @@ nav ul li a:hover{
     display: none;
 }
 
-#check
-{
+#check {
     display: none;
 }
 
-main
-{
+main {
     background-color: #ffcc5e;
     margin-top: 0;
 }
 
-main h2
-{
+main h2 {
     margin: 20px;
-    font-size: 30px;
+    font-size: 45px;
+    color: #000000;  
 }
 
 #Sobre {
@@ -107,7 +101,9 @@ main h2
     font-size: 16px;
     color: #000000;
 }
+
 .Sobre h2 {
+    top: 20;
     color: #666;
     text-align: left;
 }
@@ -117,8 +113,7 @@ main h2
     margin-bottom: 15px;
 }
 
-.p1
-{
+.p1 {
     margin-bottom: 15px;
 }
 
@@ -136,30 +131,28 @@ footer {
     margin-top: 30px;  
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 20%;
 }
 
 footer p
 {
-    margin-top: 35px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-#footerConatiner
-{
+#footerConatiner {
     background-color: #f5be47 ;
     width: 100%;
     padding: 70px 30px 20px;
     margin-bottom: 20px;
 }
 
-.socialIcons
-{
+.socialIcons {
     display: flex;
     justify-content: center;
 }
 
-.socialIcons a
-{
+.socialIcons a {
     text-decoration: none;
     padding: 10px;
     background-color: white;
@@ -167,20 +160,18 @@ footer p
     border-radius: 50%;
 }
 
-.socialIcons a i
-{
+.socialIcons a i {
     font-size: 2em;
     color: #000000;
     opacity: 0.9;
 }
-.socialIcons a:hover
-{
+
+.socialIcons a:hover {
     background-color: black;
     transition: 0.5s;
 }
 
-.socialIcons a i:hover
-{
+.socialIcons a i:hover {
     color: #ffffff;
     transition: 0.5s;
 }
@@ -203,16 +194,15 @@ footer p
     transition-duration: 0.2s;
     background-color: #fff;
     margin-bottom: 0px;
+    cursor: pointer;
 }
 
-.truffle h3
-{
+.truffle h3 {
     margin: 10px;
     margin-top: 0;
 }
 
-.truffle p
-{
+.truffle p {
     margin: 10px;
 }
 
@@ -221,46 +211,70 @@ footer p
     border-radius: 10px;
 }
 
-.truffle:hover
-{
+.truffle:hover {
     box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
 
-@media (max-width: 950px) 
-{
-    label.Logot
-    {
-        font-size: 30px;
-        padding-left: 50px;
+.catalog2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 700px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 3px;
+    transition-duration: 0.2s;
+    background-color: #fff;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.cards h3 {
+    margin: 10px;
+    margin-top: 0;
+}
+
+.cards img {
+    width: 650px;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 950px) {
+    
+    label.Logot {
+        font-size: 20px;
+        padding-left: 30    px;
     }   
 
-    nav ul li a
-    {
+    nav ul li a {
         font-size: 20px;
     }
 }
 
-@media (max-width: 780px)
-{
-
-    nav
-    {  
+@media (max-width: 768px) {
+    nav {
         position: fixed;
         top: 0;
     }
 
-    .checkbtn
-    {
+    .checkbtn {
         display: block;
     }
 
-   main
-    {
+    main {
         margin-top: 100px;
     }
 
-    ul
-    {
+    ul {
         position: fixed;
         width: 100%;
         height: 100%;
@@ -270,39 +284,36 @@ footer p
         text-align: center;
         transition: all 0.5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 90px 0;
         line-height: 100%;
     }
-    nav ul li a
-    {
+
+    nav ul li a {
         font-size: 30px;
     }
 
-    #check:checked ~ ul
-    {
+    #check:checked ~ ul {
         left: 0;
     }
-    
 }
 
-@media (max-width: 425px)
-{
+@media (max-width: 425px) {
 
-    .Sobre
-    {
+    .Logot{
+        font-size: 20px;
+    }
+    .Sobre {
         margin-top: 120px;
     }
-   
 
-    nav
-    {
-        
-        top:0;
+    nav {
+        top: 0;
     }
-    ul
-    {
+
+    ul {
         width: 100%;
         height: 100vw;
         background: rgb(12, 115, 155);
@@ -312,24 +323,141 @@ footer p
         transition: all 0.5s;
         position: fixed;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 120px 0;
         line-height: 100%;
         position: fixed;
     }
-    nav ul li a
-    {
+
+    nav ul li a {
         font-size: 30px;
     }
 
-    .truffle:hover
-    {
-        box-shadow: rgb(0, 0, 0) 10px 10px 10p
+    .truffle:hover {
+        box-shadow: rgb(0, 0, 0) 10px 10px 10p;
     }
-    #check:checked ~ li
-    {
+
+    #check:checked ~ ul {
         left: 0;
     }
-        
+}
+
+@media (max-width: 375px) {
+    
+    label.Logot {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .Sobre {
+        margin-top: 120px;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    ul {
+        width: 100%;
+        height: 100vw;
+        background: rgb(12, 115, 155);
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        position: fixed;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 120px 0;
+        line-height: 100%;
+        position: fixed;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+    }
+
+    .truffle:hover {
+        box-shadow: rgb(0, 0, 0) 10px 10px 10p;
+    }
+
+    #check:checked ~ li {
+        left: 0;
+    }
+}
+
+
+@media (max-width: 320px) {
+    label.Logot {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .Sobre {
+        margin-top: 120px;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    ul {
+        width: 100%;
+        height: 100vw;
+        background: rgb(12, 115, 155);
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        position: fixed;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 120px 0;
+        line-height: 100%;
+        position: fixed;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+    }
+
+    .truffle:hover {
+        box-shadow: rgb(0, 0, 0) 10px 10px 10p;
+    }
+
+    #check:checked ~ li {
+        left: 0;
+    }
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-wrap: wrap;
+    }
+
+    .socialIcons a {
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 5px; /* Reduzindo a margem para os ícones se encaixarem melhor */
+        border-radius: 50%;
+        font-size: 20px; /* Ajuste o tamanho do ícone conforme necessário */
+    }
 }
